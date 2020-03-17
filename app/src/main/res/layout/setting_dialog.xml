@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:layout_width="match_parent"
+    android:layout_height="450dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="رقم ال IP"
+            android:textColor="@color/purple_dark"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ip_textview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+
+            android:layout_margin="2dp"
+            android:background="@drawable/edittext_back"
+            android:elevation="2dp"
+            android:padding="3dp"
+            android:textColor="@color/darkblue_"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="اسم الشركة"
+            android:textColor="@color/purple_dark"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/companeyName"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_back"
+            android:elevation="2dp"
+            android:padding="3dp"
+            android:textColor="@color/darkblue_"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="الهاتف  "
+            android:textColor="@color/purple_dark"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/companeyTEL"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_back"
+            android:elevation="2dp"
+            android:padding="3dp"
+            android:textColor="@color/darkblue_"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="الشعار"
+            android:textColor="@color/purple_dark"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/companeyLogo"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:src="@drawable/icon"
+            android:background="@drawable/edittext_back"
+            android:elevation="2dp"
+            android:padding="3dp"
+            android:textColor="@color/darkblue_"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:elevation="1dp"
+
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="الكمية المستلمة مساوية للكمية المرسلة"
+            android:textColor="@color/purple_dark"
+            android:textSize="15sp" />
+        <CheckBox
+            android:id="@+id/sameQTY"
+            android:layout_width="match_parent"
+            android:layout_gravity="right"
+            android:gravity="left"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+
+            android:elevation="2dp"
+            android:padding="3dp"
+            android:textColor="@color/darkblue_"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:gravity="center"
+        android:layout_gravity="bottom">
+
+
+        <Button
+            android:id="@+id/save_setting"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="حفظ "
+
+            android:elevation="5dp"
+            android:textStyle="bold"
+            android:padding="3dp"
+      android:layout_margin="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/white_dark"
+            android:background="@drawable/dark_gradiant_smallborder"/>
+        <Button
+            android:id="@+id/save222"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:elevation="5dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/white_dark"
+            android:background="@drawable/dark_gradiant_smallborder"/>
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="اغلاق"
+            android:elevation="5dp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:padding="3dp"
+
+            android:textSize="16sp"
+            android:textColor="@color/white_dark"
+            android:background="@drawable/dark_gradiant_smallborder"/>
+    </LinearLayout>
+
+</LinearLayout>

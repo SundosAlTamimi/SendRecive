@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:layout_width="500dp"
+    android:layout_height="350dp">
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="dev_check_disconnect"
+            android:visibility="gone"
+            android:id="@+id/check_disconnect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Divide | EditText | Button | -->
+        <EditText
+            android:id="@+id/EditTextAddressBT"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:inputType="text"/>
+        <Button
+            android:text="Connect"
+            android:id="@+id/ButtonConnectBT"
+            android:background="@color/purple_dark"
+            android:layout_width="100dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:layout_height="50dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/ButtonSearchBT"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+    <!--android:id="@+id/LinearLayout03"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/LinearLayout04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/BtAddrListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

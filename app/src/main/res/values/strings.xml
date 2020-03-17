@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SendRecive</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_recive__po">Recive_PO</string>
+</resources>

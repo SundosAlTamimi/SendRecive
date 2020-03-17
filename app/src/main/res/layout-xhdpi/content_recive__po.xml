@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layer1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linearmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/back_white"
+            android:elevation="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            android:orientation="vertical">
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/linear"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="end"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:background="@drawable/border"-->
+            <!--                android:gravity="end"-->
+            <!--                android:alpha="0.7"-->
+            <!--                android:visibility="gone"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:paddingHorizontal="20dp">-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/search"-->
+            <!--                    android:layout_width="50dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:layout_marginHorizontal="5dp"-->
+            <!--                    android:background="@drawable/search_icon" />-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/note"-->
+            <!--                    android:layout_width="60dp"-->
+            <!--                    android:layout_height="60dp"-->
+            <!--                    android:background="@drawable/note" />-->
+
+
+            <!--            </LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:text="رقم الطلبية"
+                    android:textColor="@color/white_dark"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/counter_no"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_back"
+
+                    android:elevation="2dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/darkblue_"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="اسم المورد"
+                    android:textColor="@color/white_dark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cust_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/edittext_white_border"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/darkblue_"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="رقم المادة"
+                    android:textColor="@color/white_dark"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/previous_read"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/edittext_back"
+                    android:elevation="2dp"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/darkblue_"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="اسم المادة"
+                    android:textColor="@color/white_dark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/current_read"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/edittext_white_border"
+                    android:elevation="2dp"
+                    android:padding="5dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textColor="@color/darkblue_"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="الكمية المطلوبة"
+                    android:textColor="@color/white_dark"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/consuming"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edittext_back"
+                    android:elevation="2dp"
+                    android:text="0"
+                    android:padding="5dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textColor="@color/darkblue_"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="المجاني"
+                    android:textColor="@color/white_dark"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/free_qty"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_back"
+                    android:elevation="2dp"
+                    android:text="0"
+                    android:padding="5dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textColor="@color/darkblue_"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="عدد الاصناف "
+                    android:textColor="@color/white_dark"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/consuming_value"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+
+                    android:background="@drawable/edittext_back"
+                    android:text="0"
+                    android:elevation="2dp"
+                    android:padding="5dp"
+                    android:inputType="number"
+
+                    android:gravity="center"
+                    android:textColor="@color/darkblue_"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="الكمية المستلمة "
+                    android:textColor="@color/white_dark"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/previous_palance"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+
+                    android:background="@drawable/edittext_back"
+                    android:elevation="2dp"
+                    android:padding="5dp"
+                    android:inputType="number"
+
+                    android:gravity="center"
+                    android:textColor="@color/darkblue_"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="تاريخ الانتهاء "
+                    android:textColor="@color/white_dark"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/gas_return"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+
+                    android:text="0.0"
+                    android:inputType="numberDecimal"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/edittext_back"
+                    android:elevation="2dp"
+                    android:padding="5dp"
+
+                    android:gravity="center"
+                    android:textColor="@color/darkblue_"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="عدد الاصناف المستلمة"
+                    android:textColor="@color/white_dark"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/service_return"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="numberDecimal"
+                    android:text="0.0"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edittext_back"
+                    android:elevation="2dp"
+                    android:padding="5dp"
+
+                    android:gravity="center"
+                    android:textColor="@color/darkblue_"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="رقم فاتورة المورد"
+                    android:textColor="@color/white_dark"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/tax_services"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/edittext_back"
+                    android:elevation="2dp"
+                    android:padding="5dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textColor="@color/darkblue_"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/add_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    app:fabSize="mini"
+                    android:layout_margin="@dimen/fab_margin"
+                    app:srcCompat="@drawable/ic_add_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/delet_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/dark_gradiant_smallborder"
+                    app:fabSize="mini"
+                    android:layout_margin="@dimen/fab_margin"
+                    app:srcCompat="@drawable/ic_delete_forever_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/total_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:elevation="2dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/edittext_white_border"
+                android:layout_height="150dp" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittext_white_border"
+                    android:padding="5dp">
+                    <TextView
+                        android:text="اسم المادة "
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple_dark"
+                        android:textSize="15sp"
+                        />
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="0.03"
+                      android:gravity="center"
+
+                        android:layout_height="match_parent"
+                        android:textColor="@color/purple_dark"
+                        android:background="@color/purple_dark"
+                        />
+
+                    <TextView
+                        android:text="الكمية  "
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_margin="2dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple_dark"
+                        android:textSize="15sp"
+                        />
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="0.03"
+                        android:gravity="center"
+
+                        android:layout_height="match_parent"
+
+                        android:background="@color/purple_dark"
+                        />
+                    <TextView
+                        android:text="المجاني  "
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/purple_dark"
+                        android:textSize="15sp"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:background="@drawable/edittext_white_border">
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@drawable/edittext_white_border"-->
+<!--                        />-->
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="اضافة"
+            android:textColor="@color/purple_dark"
+            android:elevation="10dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:background="@drawable/back_white"/>
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="حذف"
+            android:textColor="@color/purple_dark"
+            android:elevation="10dp"
+            android:padding="5dp"
+            android:layout_marginRight="95dp"
+            android:textSize="14sp"
+            android:background="@drawable/back_white"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+
+<!--android:gravity="center_horizontal"-->
+<!--android:orientation="vertical">-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+
+<!--    android:layout_margin="5dp"-->
+<!--    android:orientation="horizontal">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="2"-->
+<!--        android:background="@drawable/dark_gradiant_smallborder"-->
+<!--        android:elevation="2dp"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="الصافي"-->
+<!--        android:textColor="@color/white_dark"-->
+<!--        android:textSize="14sp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/net"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:layout_weight="3"-->
+<!--        android:background="@drawable/edittext_back"-->
+<!--        android:elevation="2dp"-->
+<!--        android:inputType="number"-->
+
+<!--        android:gravity="center"-->
+<!--        android:padding="5dp"-->
+<!--        android:textColor="@color/darkblue_"-->
+<!--        android:textSize="14sp" />-->
+
+<!--</LinearLayout>-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_margin="5dp"-->
+<!--    android:orientation="horizontal">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="2"-->
+<!--        android:background="@drawable/dark_gradiant_smallborder"-->
+<!--        android:elevation="2dp"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="الضريبة"-->
+<!--        android:textColor="@color/white_dark"-->
+<!--        android:textSize="14sp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/tax"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:layout_weight="3"-->
+<!--        android:background="@drawable/edittext_back"-->
+<!--        android:elevation="2dp"-->
+<!--        android:inputType="number"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="5dp"-->
+<!--        android:textColor="@color/darkblue_"-->
+<!--        android:textSize="14sp" />-->
+
+<!--</LinearLayout>-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_margin="5dp"-->
+<!--    android:orientation="horizontal">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="2"-->
+<!--        android:background="@drawable/dark_gradiant_smallborder"-->
+<!--        android:elevation="2dp"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="استهلاك الفترة"-->
+<!--        android:textColor="@color/white_dark"-->
+<!--        android:textSize="14sp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/current_consuming"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_weight="3"-->
+<!--        android:background="@drawable/edittext_back"-->
+<!--        android:elevation="2dp"-->
+<!--        android:inputType="number"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="5dp"-->
+<!--        android:textColor="@color/darkblue_"-->
+<!--        android:textSize="14sp" />-->
+
+<!--</LinearLayout>-->
+
+<!--<TextView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="3dp"-->
+<!--    android:layout_marginLeft="5dp"-->
+<!--    android:layout_marginTop="5dp"-->
+<!--    android:layout_marginRight="5dp"-->
+<!--    android:background="@color/darkblue_" />-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginTop="15dp"-->
+<!--    android:orientation="horizontal">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="2"-->
+<!--        android:background="@drawable/dark_gradiant_smallborder"-->
+<!--        android:elevation="2dp"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="القيمة المطلوبة"-->
+<!--        android:textColor="@color/white_dark"-->
+<!--        android:textSize="14sp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/last_value"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_weight="3"-->
+<!--        android:background="@drawable/edittext_back"-->
+<!--        android:elevation="2dp"-->
+<!--        android:inputType="number"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="5dp"-->
+<!--        android:textColor="@color/darkblue_"-->
+<!--        android:textSize="14sp" />-->
+
+
+<!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
